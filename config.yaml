@@ -3,7 +3,7 @@
 
 data:
   # URL de la source de données (GeoJSON des MRC du Québec — données ouvertes)
-  url: "https://raw.githubusercontent.com/mbonnery/quebec-geo/main/data/mrc.geojson"
+  url: "https://drive.google.com/uc?export=download&id=1RuUnfnXLEucpIh_e_CQ_yiAlaqPq2xph"
   raw_path: "data/raw/mrc.geojson"
 
 processing:
