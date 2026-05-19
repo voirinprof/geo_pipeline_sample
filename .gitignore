@@ -1,0 +1,21 @@
+# Environnements Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Données brutes (trop lourdes pour git)
+data/raw/
+data/processed/
+
+# Outputs générés
+outputs/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

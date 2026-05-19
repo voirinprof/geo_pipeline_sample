@@ -1,0 +1,25 @@
+# config.yaml — Paramètres du pipeline
+# Modifier ce fichier pour changer le comportement sans toucher au code.
+
+data:
+  # URL de la source de données (GeoJSON des MRC du Québec — données ouvertes)
+  url: "https://raw.githubusercontent.com/mbonnery/quebec-geo/main/data/mrc.geojson"
+  raw_path: "data/raw/mrc.geojson"
+
+processing:
+  # Projection cible (MTM zone 8, adaptée au Québec)
+  target_epsg: 32198
+  # Filtrer sur une région administrative (laisser null pour tout garder)
+  region_filter: null  # ex: "Estrie"
+
+analysis:
+  # Colonne contenant le nom des entités
+  name_column: "MRS_NM_MRC"
+  # Colonne contenant la région administrative
+  region_column: "MRS_NM_REG"
+
+export:
+  processed_path: "data/processed/mrc_processed.geojson"
+  stats_path: "outputs/stats.csv"
+  map_path: "outputs/carte.png"
+  map_title: "MRC du Québec — superficie (km²)"
